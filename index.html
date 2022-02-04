@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Chess.com Stats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <h1>Chess.com Statistics</h1>
+
+  <p>This app uses the <a href="https://www.chess.com/news/view/published-data-api">chess.com API</a> to pull up statistics, user information, and games currently being played for any chess.com user. If you don't know any usernames to check, feel free to look at my account 'musicalhawk9389'. You can then check out some of the accounts I am playing against as well if you please.
+    </p>
+
+  <form id='inputBox'>
+        <label>Enter a chess.com username</label>
+        <input id="usernameInput" type="text"></input>
+        <button id="search" type="button">Search</button>
+   </form>
+   <div class="container-fluid">
+	   <div class="row">
+		   <div class="col-12 col-md-6">
+			<div class='row'><div class='col my-auto' id="heading">STATISTICS</div></div>
+		   	<div class='row'><div class='col' id='category'>Bullet Chess</div></div>
+			<div class='row'>
+				<div class='col-4' id="bullet-rating"></div>
+				<div class="col" id='bullet-record'></div>
+			</div>
+			<br>
+                        <div class='row'><div class='col' id='category'>Blitz Chess</div></div>
+                        <div class='row'>
+                                <div class='col-4' id="blitz-rating"></div>
+                                <div class="col" id='blitz-record'></div>
+                        </div>
+			<br>
+                        <div class='row'><div class='col' id='category'>Rapid Chess</div></div>
+                        <div class='row'>
+                                <div class='col-4' id="rapid-rating"></div>
+                                <div class="col" id='rapid-record'></div>
+                        </div>
+			<br>
+                        <div class='row'><div class='col' id='category'>Daily Chess</div></div>
+                        <div class='row'>
+                                <div class='col-4' id="daily-rating"></div>
+                                <div class="col" id='daily-record'></div>
+                        </div>			
+		   </div>
+		   <div class="col">
+			   <div class="row">
+				   <div class="col my-auto" id="heading">USER PROFILE</div>
+			   </div>
+			   <div class="row">
+				   <div class="col-3"><strong>Username:</strong></div><div class="col" id="username"></div>
+			   </div>
+			   <br>
+                           <div class="row">
+				   <div class="col-2 my-auto"><strong>Joined:</strong></div>
+				   <div class="col-3 my-auto" id="joined"></div>
+				   <div class="col-4 my-auto"><strong>Last Online:</strong></div>
+				   <div class="col-2 my-auto" id="lastOnline"></div>
+                           </div>
+			   <br>
+			   <div class='row'><div class='col my-auto' id="heading">CURRENT GAMES</div></div>
+			   <div class="row">
+				   <div class="col" id="currentGame"></div>
+			   </div>
+		   </div>
+	   </div>
+   </div>
+   <br><br><br>
+
+  <script text="type/javascript" src="/script.js">
+  </script>
+
+</body>
+<footer><a href="https://github.com/brycemr/creative-project2">Bryce's Chess App Github</a></footer>
+
+</html>
+
