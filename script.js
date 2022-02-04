@@ -111,4 +111,4 @@ function updateStats(info) {
 }
 
 document.getElementById('search').addEventListener('click', onClick);
-
+document.getElementById('search').addEventListener('touchstart'. onClick);
